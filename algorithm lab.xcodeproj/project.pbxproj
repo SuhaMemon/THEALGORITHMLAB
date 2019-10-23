@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B68F1AED2360EF53005C1D65 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B68F1AEC2360EF53005C1D65 /* main.c */; };
+		B68F1AF52360F0E5005C1D65 /* structarray.c in Sources */ = {isa = PBXBuildFile; fileRef = B68F1AF42360F0E5005C1D65 /* structarray.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		B68F1AE92360EF53005C1D65 /* algorithm lab */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "algorithm lab"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68F1AEC2360EF53005C1D65 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		B68F1AF32360F0E5005C1D65 /* structarray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = structarray.h; sourceTree = "<group>"; };
+		B68F1AF42360F0E5005C1D65 /* structarray.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = structarray.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				B68F1AEC2360EF53005C1D65 /* main.c */,
+				B68F1AF32360F0E5005C1D65 /* structarray.h */,
+				B68F1AF42360F0E5005C1D65 /* structarray.c */,
 			);
 			path = "algorithm lab";
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68F1AF52360F0E5005C1D65 /* structarray.c in Sources */,
 				B68F1AED2360EF53005C1D65 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

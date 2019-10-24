@@ -47,16 +47,14 @@ int structarray(void)
         {"Ruby","Midd 1990s","Yukihiro Matsumoto","Open Source, Ruby License","Websites and Apps","11","Airbnb, GitHub","$123,000.00"}
     };
     
-    //Python language
-    strcpy(langArray[0].name, "Python");
-    strcpy(langArray[0].date, "1989");
+    printf("%20s%20s\n", "Language", "Birth Date");
+    
         for(i=0; i<10; i++)
         {
-            printf("%20s%20s\n", "Language", "Birth Date");
-            printf("%20s%20s", langArray[i].name, langArray[i].date);
+            printf("%20s%20s\n", langArray[i].name, langArray[i].date);
         }
-    
-    
+
+    /*
     printf("");
     scanf("");
         while (( = getchar()) != '\n');
@@ -100,6 +98,6 @@ int structarray(void)
                 printf ("");
                 break;
         }
-    
+    */
     return 0;
 }

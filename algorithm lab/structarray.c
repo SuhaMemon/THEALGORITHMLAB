@@ -47,6 +47,59 @@ int structarray(void)
         {"Ruby","Midd 1990s","Yukihiro Matsumoto","Open Source, Ruby License","Websites and Apps","11","Airbnb, GitHub","$123,000.00"}
     };
     
-    return 0;
+    //Python language
+    strcpy(langArray[0].name, "Python");
+    strcpy(langArray[0].date, "1989");
+        for(i=0; i<10; i++)
+        {
+            printf("%20s%20s\n", "Language", "Birth Date");
+            printf("%20s%20s", langArray[i].name, langArray[i].date);
+        }
     
+    
+    printf("");
+    scanf("");
+        while (( = getchar()) != '\n');
+        = getchar();
+        switch (answer1) {
+            case 'python':
+            case 'Python':
+                printf ("");
+                break;
+            case 'javascript':
+            case 'JavaScript':
+                printf ("");
+                break;
+            case 'Java':
+            case 'java':
+                printf ("");
+                break;
+            case 'Swift':
+            case 'swift':
+                printf ("");
+                break;
+            case 'ObjectiveC':
+            case 'Objective C':
+            case 'objectivec':
+                printf ("");
+                break;
+            case 'C++':
+            case 'c++':
+                printf ("");
+                break;
+            case 'C':
+            case 'c':
+                printf ("");
+                break;
+            case 'C#':
+            case 'c#':
+                printf ("");
+                break;
+            case 'Ruby':
+            case 'ruby':
+                printf ("");
+                break;
+        }
+    
+    return 0;
 }

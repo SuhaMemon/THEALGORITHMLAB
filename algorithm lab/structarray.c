@@ -9,7 +9,7 @@
 #include "structarray.h"
 int structarray(void)
 {
-    struct language
+    typedef struct language
     {
         char name[50];
         char date[50];
@@ -17,28 +17,56 @@ int structarray(void)
         char owner[50];
         char reason[50];
         int usagerank[10];
-        char ide[100];
-        char frameworks[100];
+        /*char ide[100];
+        char frameworks[100];*/
         char keycompanies[50];
         char salary[30];
+    }LANGUAGE;
+    
+    int main()
+    {
+        int i;
+        LANGUAGE langArray[10]={
+            
+            {"Python","1989","Guido van Rossum, CWI","Open Source","Data Science, Stats, Analytics, AI","2","Youtube, Instagram, Pinterest, Mozilla, Spotify","$116,000.00"},
+            {"JavaScript","1995","Brendan Eich, Netscape","Oracle","Websites, Front and Back End","1","Google(Gmail), Facebook, Youtube","$110,000.00"},
+            {,,,,,,,},
+            {,,,,,,,},
+            {,,,,,,,},
+            {,,,,,,,},
+            {,,,,,,,},
+            {,,,,,,,},
+            {,,,,,,,},
+        }
+/*
+        //Python language
+        strcpy(langArray[0].name, "Python");
+        strcpy(langArray[0].date, "1989");
+        
+        for(i=0; i<10; i++)
+        {
+            printf("%20s%20s\n", "Language", "Birth Date");
+            printf("%20s%20s", langArray[i].name, langArray[i].date);
+        }
+    
+        return 0;
     }
     
-    language langArray[1];
-    langArray[0]= struct language()
-    {
-        char name="Python";
-        char date="1989";
-        char creator="Guido van Rossum, CWI";
-        char owner= "Open Source";
-        char reason="Data Science, Stats, Analytics, AI";
-        int usagerank="2"
-        char IDE="PyCharm, Eclipse, Visual Studio";
-        char frameworks="Django, Pyramid, Tubo Gear";
-        char keycompanies="Youtube, Instagram, Pinterest, Mozilla, Spotify";
-        char salary="$116,000.00";
-        
-        
-    }
+}
+     struct language langArray[0];
+     langArray[0]= struct language()
+     {
+         char *name="Python";
+         char *date="1989";
+         char creator="Guido van Rossum, CWI";
+         char owner= "Open Source";
+         char reason="Data Science, Stats, Analytics, AI";
+         int usagerank="2"
+         char IDE="PyCharm, Eclipse, Visual Studio";
+         char frameworks="Django, Pyramid, Tubo Gear";
+         char keycompanies="Youtube, Instagram, Pinterest, Mozilla, Spotify";
+         char salary="$116,000.00";
+     }
      question questArray[10];
      questArray[0]=question(){
      int num=1;
@@ -46,6 +74,6 @@ int structarray(void)
      char choiceA="2";
      char choiceB="4";
      }
-     */
-    return 0;
+
 }
+*/

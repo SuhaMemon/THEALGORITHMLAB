@@ -51,7 +51,7 @@ int structarray(void)
     
         for(i=0; i<10; i++)
         {
-            printf("%20s%20s\n", langArray[i].name, langArray[i].date);
+            printf("%20s%20s%20s\n", langArray[i].name, langArray[i].date, langArray[i].creator);
         }
 
     /*

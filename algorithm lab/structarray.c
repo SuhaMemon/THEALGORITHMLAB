@@ -24,9 +24,10 @@ typedef struct language
 #include "structarray.h"
 int structarray(void)
 {
+    
         int i;
-        LANGUAGE langArray[10]={
-            
+        LANGUAGE langArray[10]=
+    {
         {"Python","1989","Guido van Rossum, CWI","Open Source","Data Science, Stats, Analytics, AI","2","Youtube, Instagram, Pinterest, Mozilla, Spotify","$116,000.00"},
             
         {"JavaScript","1995","Brendan Eich, Netscape","Oracle","Websites, Front and Back End","1","Google(Gmail), Facebook, Youtube","$110,000.00"},
@@ -44,5 +45,8 @@ int structarray(void)
         {"C#","2000","Anders Hejlsberg, Microsoft","Microsoft","Websites, Cool tool for gaming using Unity framework","7","Microsoft","$110,000.00"},
             
         {"Ruby","Midd 1990s","Yukihiro Matsumoto","Open Source, Ruby License","Websites and Apps","11","Airbnb, GitHub","$123,000.00"}
-        };
+    };
+    
+    return 0;
+    
 }

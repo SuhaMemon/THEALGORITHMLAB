@@ -32,18 +32,19 @@ int structarray(void)
             
             {"JavaScript","1995","Brendan Eich, Netscape","Oracle","Websites, Front and Back End","1","Google(Gmail), Facebook, Youtube","$110,000.00"},
             
-            {"Java","Early 1990s","James Gosling, Sun Micro","Oracle","","3","Amazon, Twitter, Google","$100,000.00"},
-        {"Swift","2014","Apple","Open Source","","","14","Apple","$115,000.00"},
+            {"Java","Early 1990s","James Gosling, Sun Micro","Oracle","Platform Port(WORA), 3 Billion Devices","3","Amazon, Twitter, Google","$100,000.00"},
             
-            {"Objective C","Early 1980s","Brad Cox, Stepstone","Open Source","","13","Apple","$113,000.00"},
+            {"Swift","2014","Apple","Open Source","Friendly to us Apple iOS development","14","Apple","$115,000.00"},
             
-            {"C++","1979","Bjarne Stoustrup, Bell Labs","Free Software Foundation, LLVM, Microsoft, Intel, Oracle, IBM","","4","Microsoft, Oracle, Amazon, Adobe","$116,000.00"},
+            {"Objective C","Early 1980s","Brad Cox, Stepstone","Open Source","Mac OSX, App code that needs to be ported to and from Apple","13","Apple","$113,000.00"},
             
-            {"C","1972","Dennis Ritchie, Bell Labs","Free Software Foundation, LLVM, Microsoft, Intel, Oracle, IBM","","5","Microsoft, Linux Companies, Qualcomm","$105,000.00"},
+            {"C++","1979","Bjarne Stoustrup, Bell Labs","Free Software Foundation, LLVM, Microsoft, Intel, Oracle, IBM","Add OOP to C and used in a lot of the same places as C","4","Microsoft, Oracle, Amazon, Adobe","$116,000.00"},
             
-            {"C#","2000","Anders Hejlsberg, Microsoft","Microsoft","","7","Microsoft","$110,000.00"},
+            {"C","1972","Dennis Ritchie, Bell Labs","Free Software Foundation, LLVM, Microsoft, Intel, Oracle, IBM","Operating Systems, IDEs, Frameworks","5","Microsoft, Linux Companies, Qualcomm","$105,000.00"},
             
-            {"Ruby","Midd 1990s","Yukihiro Matsumoto","Open Source, Ruby License","","11","Airbnb, GitHub","$123,000.00"}
+            {"C#","2000","Anders Hejlsberg, Microsoft","Microsoft","Websites, Cool tool for gaming using Unity framework","7","Microsoft","$110,000.00"},
+            
+            {"Ruby","Midd 1990s","Yukihiro Matsumoto","Open Source, Ruby License","Websites and Apps","11","Airbnb, GitHub","$123,000.00"}
         }
 /*
         //Python language

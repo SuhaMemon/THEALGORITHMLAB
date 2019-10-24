@@ -29,14 +29,21 @@ int structarray(void)
         LANGUAGE langArray[10]={
             
             {"Python","1989","Guido van Rossum, CWI","Open Source","Data Science, Stats, Analytics, AI","2","Youtube, Instagram, Pinterest, Mozilla, Spotify","$116,000.00"},
+            
             {"JavaScript","1995","Brendan Eich, Netscape","Oracle","Websites, Front and Back End","1","Google(Gmail), Facebook, Youtube","$110,000.00"},
-            {,,,,,,,},
-            {,,,,,,,},
-            {,,,,,,,},
-            {,,,,,,,},
-            {,,,,,,,},
-            {,,,,,,,},
-            {,,,,,,,},
+            
+            {"Java","Early 1990s","James Gosling, Sun Micro","Oracle","","3","Amazon, Twitter, Google","$100,000.00"},
+        {"Swift","2014","Apple","Open Source","","","14","Apple","$115,000.00"},
+            
+            {"Objective C","Early 1980s","Brad Cox, Stepstone","Open Source","","13","Apple","$113,000.00"},
+            
+            {"C++","1979","Bjarne Stoustrup, Bell Labs","Free Software Foundation, LLVM, Microsoft, Intel, Oracle, IBM","","4","Microsoft, Oracle, Amazon, Adobe","$116,000.00"},
+            
+            {"C","1972","Dennis Ritchie, Bell Labs","Free Software Foundation, LLVM, Microsoft, Intel, Oracle, IBM","","5","Microsoft, Linux Companies, Qualcomm","$105,000.00"},
+            
+            {"C#","2000","Anders Hejlsberg, Microsoft","Microsoft","","7","Microsoft","$110,000.00"},
+            
+            {"Ruby","Midd 1990s","Yukihiro Matsumoto","Open Source, Ruby License","","11","Airbnb, GitHub","$123,000.00"}
         }
 /*
         //Python language

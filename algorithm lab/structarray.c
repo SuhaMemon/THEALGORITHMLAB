@@ -52,7 +52,7 @@ int searcharray(void){
     printf("Enter Language Name: %s\n", name);
     scanf("%s", name);
     for (int i = 0; i<SIZE; i++){
-        if(strstr(langArray[i].name, name)){
+        if(strcmp(langArray[i].name, name)!=0){
             printf("%20s%20s%20s\n", langArray[i].name, langArray[i].date, langArray[i].creator);
         }
     }

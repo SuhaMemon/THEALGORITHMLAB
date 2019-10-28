@@ -46,24 +46,21 @@ LANGUAGE langArray[SIZE]=
     {"Ruby","Midd 1990s","Yukihiro Matsumoto","Open Source, Ruby License","Websites and Apps","11","Airbnb, GitHub","$123,000.00"}
 };
 
-int searcharray(void){
-    
+int searcharrayname(void){
     char name[80];
-    printf("Enter Language Name: %s\n", name);
+    printf("Enter Language Name: %s", name);
     scanf("%s", name);
     for (int i = 0; i<SIZE; i++){
-        if(strcmp(langArray[i].name, name)!=0){
-            printf("%20s%20s%20s\n", langArray[i].name, langArray[i].date, langArray[i].creator);
+        if(strcmp(langArray[i].name, name)==0){
+            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
+            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
         }
     }
-    
     return 0;
-    
 }
 
 int structarray(void)
 {
-   
     char input;
     int endOrNo, validInput;
     endOrNo = 0;
@@ -91,12 +88,7 @@ int structarray(void)
                 case 'a':
                 case 'A':
                     validInput = 1;
-                    searcharray();
-                    
-                    
-                    
-                    
-                    
+                    searcharrayname();
                     break;
                     
                 case 'b':
@@ -114,25 +106,22 @@ int structarray(void)
                 case 'd':
                 case 'D':
                     validInput = 4;
-                    
+
                     break;
                     
                 case 'e':
                 case 'E':
                     validInput = 5;
-                    
                     break;
                     
                 case 'f':
                 case 'F':
                     validInput = 6;
-                    
                     break;
                     
                 case 'g':
                 case 'G':
                     validInput = 7;
-                    
                     break;
                     
                 case 0:
@@ -145,18 +134,17 @@ int structarray(void)
                     break;
                     
             }
-            
-        printf("%20s%20s\n", "Language", "Birth Date");
+        /*
+        printf("%20s%20s%30s%40s%50s%20s%50s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
            int i;
            for(i=0; i<10; i++)
            {
-               printf("%20s%20s%20s\n", langArray[i].name, langArray[i].date, langArray[i].creator);
+               printf("%20s%20s%30s%40s%50s%20s%50s%30s\n\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
            }
            
         }
     }
 
-    /*
     printf("");
     scanf("");
         while (( = getchar()) != '\n');
@@ -201,5 +189,7 @@ int structarray(void)
                 break;
         }
     */
+        }
+    }
     return 0;
 }

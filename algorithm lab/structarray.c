@@ -51,10 +51,15 @@ int mainarray (void){
         int i;
         for(i=0; i<10; i++)
         {
-            printf("%20s%20s%30s%40s%50s%20s%50s%30s\n\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
-        }
-    return 0;
-}
+            printf("%20s%20s%30s%30s\n", "Language", "Birth Date", "Creator","Owner");
+            printf("%20s%20s%30s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner);
+            printf("\n");
+            printf("%40s%20s%40s%30s\n","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
+            printf("%40s%20s%40s%30s\n", langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
+            printf("\n");
+                    }
+        return 0;
+    }
 
 int searcharrayname(void){
     char name[80];
@@ -138,10 +143,8 @@ int searcharraycompanies(void){
     scanf("%s", name);
     for (int i = 0; i<SIZE; i++){
         if(strcmp(langArray[i].keycompanies, name)==0){
-            printf("%20s%20s%30s%30s\n", "Language", "Birth Date", "Creator","Owner");
-            printf("%20s%20s%30s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner);
-            printf("%40s%20s%40s%30s\n","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
-            printf("%40s%20s%40s%30s\n", langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
+            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
+            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
         }
     }
     return 0;
@@ -207,7 +210,7 @@ int structarray(void)
                 case 'f':
                 case 'F':
                     validInput = 6;
-                  //  searcharrayframeworks();
+                //    searcharrayframeworks();
                     break;
                     
                 case 'g':

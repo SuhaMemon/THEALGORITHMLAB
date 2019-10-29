@@ -47,15 +47,13 @@ LANGUAGE langArray[SIZE]=
 };
 
 int mainarray (void){
-        printf("%20s%20s%30s%40s%50s%20s%50s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
         int i;
         for(i=0; i<10; i++)
         {
-            printf("%20s%20s%30s%30s\n", "Language", "Birth Date", "Creator","Owner");
-            printf("%20s%20s%30s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner);
-            printf("\n");
-            printf("%40s%20s%40s%30s\n","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
-            printf("%40s%20s%40s%30s\n", langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
+            printf("%20s%20s%30s%30s%40s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand");
+            printf("%20s%20s%30s%30s%40s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason);
+            printf("%20s%40s%30s\n","GitHub Usage Ranking","Key Companies", "Average Salary");
+            printf("%20s%40s%30s\n", langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
             printf("\n");
                     }
         return 0;

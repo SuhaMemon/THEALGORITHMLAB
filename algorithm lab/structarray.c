@@ -46,6 +46,16 @@ LANGUAGE langArray[SIZE]=
     {"Ruby","Midd 1990s","Yukihiro Matsumoto","Open Source, Ruby License","Websites and Apps","11","Airbnb, GitHub","$123,000.00"}
 };
 
+int mainarray (void){
+        printf("%20s%20s%30s%40s%50s%20s%50s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
+        int i;
+        for(i=0; i<10; i++)
+        {
+            printf("%20s%20s%30s%40s%50s%20s%50s%30s\n\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
+        }
+    return 0;
+}
+
 int searcharrayname(void){
     char name[80];
     printf("Enter Language Name: %s", name);
@@ -97,7 +107,7 @@ int searcharrayreasons(void){
     }
     return 0;
 }
-
+/*
 int searcharrayide(void){
     char name[80];
     printf("Enter IDE: %s", name);
@@ -121,15 +131,17 @@ int searcharrayframeworks(void){
         }
     return 0;
 }
-
+*/
 int searcharraycompanies(void){
     char name[80];
     printf("Enter Key Companies' Names: %s", name);
     scanf("%s", name);
     for (int i = 0; i<SIZE; i++){
         if(strcmp(langArray[i].keycompanies, name)==0){
-            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
-            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
+            printf("%20s%20s%30s%30s\n", "Language", "Birth Date", "Creator","Owner");
+            printf("%20s%20s%30s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner);
+            printf("%40s%20s%40s%30s\n","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
+            printf("%40s%20s%40s%30s\n", langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
         }
     }
     return 0;
@@ -156,6 +168,7 @@ int structarray(void)
         printf("E. IDE\n");
         printf("F. Frameworks\n");
         printf("G. Key Companies\n");
+        printf("H. Print Entire Table\n");
         printf("------------------------------------------\n");
         printf("Select Option: ");
         while (validInput == 0) {
@@ -188,19 +201,25 @@ int structarray(void)
                 case 'e':
                 case 'E':
                     validInput = 5;
-                    searcharrayide();
+                   // searcharrayide();
                     break;
                     
                 case 'f':
                 case 'F':
                     validInput = 6;
-                    searcharrayframeworks();
+                  //  searcharrayframeworks();
                     break;
                     
                 case 'g':
                 case 'G':
                     validInput = 7;
                     searcharraycompanies();
+                    break;
+                    
+                case 'H':
+                case 'h':
+                    validInput=8;
+                    mainarray();
                     break;
                     
                 case 0:
@@ -213,17 +232,7 @@ int structarray(void)
                     break;
                     
             }
-        /*
-        printf("%20s%20s%30s%40s%50s%20s%50s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
-           int i;
-           for(i=0; i<10; i++)
-           {
-               printf("%20s%20s%30s%40s%50s%20s%50s%30s\n\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
-           }
-           
-        }
-    }
-
+/*
     printf("");
     scanf("");
         while (( = getchar()) != '\n');
@@ -267,7 +276,7 @@ int structarray(void)
                 printf ("");
                 break;
         }
-    */
+        */
         }
     }
     return 0;

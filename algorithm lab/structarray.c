@@ -19,8 +19,6 @@ typedef struct language
     char owner[100];
     char reason[100];
     char usagerank[10];
-    /*char ide[100];
-     char frameworks[100];*/
     char keycompanies[100];
     char salary[30];
 }LANGUAGE;
@@ -50,11 +48,8 @@ int mainarray (void){
         int i;
         for(i=0; i<10; i++)
         {
-            printf("%20s%20s%30s%30s%40s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand");
-            printf("%20s%20s%30s%30s%40s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason);
-            printf("%20s%40s%30s\n","GitHub Usage Ranking","Key Companies", "Average Salary");
-            printf("%20s%40s%30s\n", langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
-            printf("\n");
+            printf("%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
+              printf("\n");
                     }
         return 0;
     }
@@ -65,8 +60,8 @@ int searcharrayname(void){
     scanf("%s", name);
     for (int i = 0; i<SIZE; i++){
         if(strstr(langArray[i].name, name)!=0){
-            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
-            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
+          printf("%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
+            printf("\n");
         }
     }
     return 0;
@@ -78,8 +73,8 @@ int searcharraycreator(void){
     scanf("%s", name);
     for (int i = 0; i<SIZE; i++){
         if(strstr(langArray[i].creator, name)!=0){
-            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
-            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
+            printf("%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
+              printf("\n");
         }
     }
     return 0;
@@ -91,8 +86,8 @@ int searcharrayowner(void){
     scanf("%s", name);
     for (int i = 0; i<SIZE; i++){
         if(strstr(langArray[i].owner, name)!=0){
-            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
-            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
+           printf("%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
+              printf("\n");
         }
     }
     return 0;
@@ -104,8 +99,8 @@ int searcharrayreasons(void){
     scanf("%s", name);
     for (int i = 0; i<SIZE; i++){
         if(strstr(langArray[i].reason, name)!=0){
-            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
-            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
+            printf("%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
+              printf("\n");
         }
     }
     return 0;
@@ -117,8 +112,8 @@ int searcharraycompanies(void){
     scanf("%s", name);
     for (int i = 0; i<SIZE; i++){
         if(strstr(langArray[i].keycompanies, name)!=0){
-            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
-            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
+            printf("%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
+              printf("\n");
         }
     }
     return 0;

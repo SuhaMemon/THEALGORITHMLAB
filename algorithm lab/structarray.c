@@ -59,6 +59,82 @@ int searcharrayname(void){
     return 0;
 }
 
+int searcharraycreator(void){
+    char name[80];
+    printf("Enter Creator Name: %s", name);
+    scanf("%s", name);
+    for (int i = 0; i<SIZE; i++){
+        if(strcmp(langArray[i].creator, name)==0){
+            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
+            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
+        }
+    }
+    return 0;
+}
+
+int searcharrayowner(void){
+    char name[80];
+    printf("Enter Owner Name: %s", name);
+    scanf("%s", name);
+    for (int i = 0; i<SIZE; i++){
+        if(strcmp(langArray[i].owner, name)==0){
+            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
+            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
+        }
+    }
+    return 0;
+}
+
+int searcharrayreasons(void){
+    char name[80];
+    printf("Enter Reasons for Demand: %s", name);
+    scanf("%s", name);
+    for (int i = 0; i<SIZE; i++){
+        if(strcmp(langArray[i].reason, name)==0){
+            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
+            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
+        }
+    }
+    return 0;
+}
+
+int searcharrayide(void){
+    char name[80];
+    printf("Enter IDE: %s", name);
+    scanf("%s", name);
+    for (int i = 0; i<SIZE; i++){
+        //if(strcmp(langArray[i]., name)==0){    --- rewrite to fit IDE filter
+            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
+            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
+    }
+    return 0;
+}
+
+int searcharrayframeworks(void){
+    char name[80];
+    printf("Enter Frameworks: %s", name);
+    scanf("%s", name);
+    for (int i = 0; i<SIZE; i++){
+         //if(strcmp(langArray[i]., name)==0){    --- rewrite to fit FRAMEWORKS filter
+            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
+            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
+        }
+    return 0;
+}
+
+int searcharraycompanies(void){
+    char name[80];
+    printf("Enter Key Companies' Names: %s", name);
+    scanf("%s", name);
+    for (int i = 0; i<SIZE; i++){
+        if(strcmp(langArray[i].keycompanies, name)==0){
+            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", "Language", "Birth Date", "Creator","Owner","Reason for Demand","GitHub Usage Ranking","Key Companies", "Average Salary");
+            printf("%20s%20s%30s%30s%40s%20s%40s%30s\n", langArray[i].name, langArray[i].date, langArray[i].creator, langArray[i].owner, langArray[i].reason, langArray[i].usagerank, langArray[i].keycompanies, langArray[i].salary);
+        }
+    }
+    return 0;
+}
+
 int structarray(void)
 {
     char input;
@@ -94,34 +170,37 @@ int structarray(void)
                 case 'b':
                 case 'B':
                     validInput = 2;
-                   
+                    searcharraycreator();
                     break;
                     
                 case 'c':
                 case 'C':
                     validInput = 3;
-                    
+                    searcharrayowner();
                     break;
                     
                 case 'd':
                 case 'D':
                     validInput = 4;
-
+                    searcharrayreasons();
                     break;
                     
                 case 'e':
                 case 'E':
                     validInput = 5;
+                    searcharrayide();
                     break;
                     
                 case 'f':
                 case 'F':
                     validInput = 6;
+                    searcharrayframeworks();
                     break;
                     
                 case 'g':
                 case 'G':
                     validInput = 7;
+                    searcharraycompanies();
                     break;
                     
                 case 0:

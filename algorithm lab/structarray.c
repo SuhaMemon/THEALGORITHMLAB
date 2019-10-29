@@ -48,7 +48,7 @@ int mainarray (void){
         int i;
         for(i=0; i<9; i++)
         {
-            printf("%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
+            printf("%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
               printf("\n");
                     }
         return 0;
@@ -60,7 +60,7 @@ int searcharrayname(void){
     scanf("%s", name);
     for (int i = 0; i<SIZE; i++){
         if(strstr(langArray[i].name, name)!=0){
-          printf("%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
+          printf("%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
             printf("\n");
         }
     }
@@ -73,7 +73,7 @@ int searcharraycreator(void){
     scanf("%s", name);
     for (int i = 0; i<SIZE; i++){
         if(strstr(langArray[i].creator, name)!=0){
-            printf("%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
+            printf("%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
               printf("\n");
         }
     }
@@ -86,7 +86,7 @@ int searcharrayowner(void){
     scanf("%s", name);
     for (int i = 0; i<SIZE; i++){
         if(strstr(langArray[i].owner, name)!=0){
-           printf("%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
+           printf("%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
               printf("\n");
         }
     }
@@ -99,7 +99,7 @@ int searcharrayreasons(void){
     scanf("%s", name);
     for (int i = 0; i<SIZE; i++){
         if(strstr(langArray[i].reason, name)!=0){
-            printf("%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
+            printf("%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
               printf("\n");
         }
     }
@@ -112,7 +112,7 @@ int searcharraycompanies(void){
     scanf("%s", name);
     for (int i = 0; i<SIZE; i++){
         if(strstr(langArray[i].keycompanies, name)!=0){
-            printf("%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
+            printf("%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
               printf("\n");
         }
     }

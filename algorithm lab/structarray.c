@@ -46,7 +46,7 @@ LANGUAGE langArray[SIZE]=
 
 int mainarray (void){
         int i;
-        for(i=0; i<10; i++)
+        for(i=0; i<9; i++)
         {
             printf("%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n%30s%50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
               printf("\n");

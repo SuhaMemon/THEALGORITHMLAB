@@ -128,9 +128,9 @@ int structarray(void)
     
     while (endOrNo == 0) {
         validInput = 0;
-        printf("------------------------------------------\n");
-        printf("             ~ Menu Selection ~           \n");
-        printf("------------------------------------------\n");
+        printf("--------------------------------------------\n");
+        printf("             ~ Menu Selection ~             \n");
+        printf("--------------------------------------------\n");
         printf("Options:\n");
         printf("A. Language\n");
         printf("B. Creator\n");
@@ -138,7 +138,7 @@ int structarray(void)
         printf("D. Reasons for Demand\n");
         printf("E. Key Companies\n");
         printf("F. Print Entire Table\n");
-        printf("------------------------------------------\n");
+        printf("--------------------------------------------\n");
         printf("Select Option: ");
         while (validInput == 0) {
             scanf("%c", &input);

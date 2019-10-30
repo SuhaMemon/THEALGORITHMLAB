@@ -35,7 +35,7 @@ LANGUAGE langArray[SIZE]=
         
     {"Objective C","Early 1980s","Brad Cox, Stepstone","Open Source","Mac OSX, App code that needs to be ported to and from Apple","13","Apple","$113,000.00"},
         
-    {"C++","1979","Bjarne Stoustrup, Bell Labs","Free Software Foundation, LLVM, Microsoft, Intel, Oracle, IBM","Add OOP to C and used in a lot of the same places as C","4","Microsoft, Oracle, Amazon, Adobe","$116,000.00"},
+    //Figure out what's missing! (Hint: check the spreadsheet on Excel)
         
     {"C","1972","Dennis Ritchie, Bell Labs","Free Software Foundation, LLVM, Microsoft, Intel, Oracle, IBM","Operating Systems, IDEs, Frameworks","5","Microsoft, Linux Companies, Qualcomm","$105,000.00"},
         
@@ -45,12 +45,7 @@ LANGUAGE langArray[SIZE]=
 };
 
 int mainarray (void){
-        int i;
-        for(i=0; i<9; i++)
-        {
-            printf("%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
-              printf("\n");
-                    }
+//Figure out how to print the entire table (Hint: run the other searcharray functions and find how it is able to print structs that match the user input)
         return 0;
     }
 
@@ -73,23 +68,14 @@ int searcharraycreator(void){
     scanf("%s", name);
     for (int i = 0; i<SIZE; i++){
         if(strstr(langArray[i].creator, name)!=0){
-            printf("%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
-              printf("\n");
+            //find out how to print the Structs that match the user input (Hint: do this after you figure out the mainarray function)
         }
     }
     return 0;
 }
 
 int searcharrayowner(void){
-    char name[80];
-    printf("Enter Owner Name: %s", name);
-    scanf("%s", name);
-    for (int i = 0; i<SIZE; i++){
-        if(strstr(langArray[i].owner, name)!=0){
-           printf("%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n%30s%-50s\n", "Language: ", langArray[i].name, "Birth Date: ", langArray[i].date, "Creator: ",langArray[i].creator, "Owner: ",langArray[i].owner, "Reason for Demand: ", langArray[i].reason, "GitHub Usage Ranking: ",langArray[i].usagerank, "Key Companies: ",langArray[i].keycompanies, "Average Salary: ", langArray[i].salary);
-              printf("\n");
-        }
-    }
+    //Figure out how to search for the Owner Name (Hint: Check the previous searcharray functions and the variables)
     return 0;
 }
 
@@ -185,51 +171,6 @@ int structarray(void)
                     break;
                     
             }
-/*
-    printf("");
-    scanf("");
-        while (( = getchar()) != '\n');
-        = getchar();
-        switch (answer1) {
-            case 'python':
-            case 'Python':
-                printf ("");
-                break;
-            case 'javascript':
-            case 'JavaScript':
-                printf ("");
-                break;
-            case 'Java':
-            case 'java':
-                printf ("");
-                break;
-            case 'Swift':
-            case 'swift':
-                printf ("");
-                break;
-            case 'ObjectiveC':
-            case 'Objective C':
-            case 'objectivec':
-                printf ("");
-                break;
-            case 'C++':
-            case 'c++':
-                printf ("");
-                break;
-            case 'C':
-            case 'c':
-                printf ("");
-                break;
-            case 'C#':
-            case 'c#':
-                printf ("");
-                break;
-            case 'Ruby':
-            case 'ruby':
-                printf ("");
-                break;
-        }
-        */
         }
     }
     return 0;
